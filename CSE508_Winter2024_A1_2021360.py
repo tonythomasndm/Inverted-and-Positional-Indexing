@@ -99,7 +99,7 @@ def orOp(docs1,docs2):
 
 def andNotOp(docs1,docs2,total_docs):
     not_docs2 = total_docs.difference(docs2)
-    return docs1.intersection(docs2)
+    return docs1.intersection(not_docs2)
 
 def orNotOp(docs1,docs2,total_docs):
     not_docs2 = total_docs.difference(docs2)
